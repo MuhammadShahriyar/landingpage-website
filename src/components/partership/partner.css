@@ -1,0 +1,140 @@
+.partner-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 80px;
+    gap: 10px;
+    background: linear-gradient(360deg, rgba(21, 64, 109, 0.8) 0%, rgba(21, 64, 109, 0.666876) 27.66%, rgba(21, 64, 109, 0) 69.14%),
+
+                url("/src/assets/partner/56bf7e2106840a1261ced01348d087e3.jpeg") no-repeat center/cover;
+    border-radius: 20px;
+    margin: 0px 55px;
+  }
+  
+  .partner-content {
+    max-width: 600px;
+    color: white;
+  }
+  
+  .partner-tag {
+    background: #fff;
+    color: #153F6D;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .partner-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .partner-content p {
+    margin-bottom: 30px;
+  }
+  
+  .learn-more-button {
+    background-color: #fff;
+    color: #153F6D;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .learn-more-button:after {
+    content: '→';
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #eee;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .partner-main {
+      padding: 60px;
+      margin: 0px 50px;
+    }
+    
+    .partner-content {
+      max-width: 500px;
+    }
+  
+    .partner-content h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .partner-main {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      margin: 0px 20px;
+    }
+  
+    .partner-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .partner-tag {
+      margin-bottom: 15px;
+    }
+  
+    .partner-content h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+  
+    .partner-content p {
+      margin-bottom: 20px;
+    }
+  
+    .learn-more-button {
+      padding: 8px 16px;
+      font-size: 1rem;
+    }
+  
+    .learn-more-button:after {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-main {
+      padding: 20px;
+      margin: 0px 10px;
+    }
+  
+    .partner-content {
+      max-width: 100%;
+    }
+  
+    .partner-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .partner-content p {
+      font-size: 0.9rem;
+    }
+  
+    .learn-more-button {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  
+    .learn-more-button:after {
+      font-size: 0.9rem;
+    }
+  }
+
