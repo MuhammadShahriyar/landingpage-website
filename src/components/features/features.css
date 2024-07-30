@@ -1,5 +1,6 @@
 .section-container {
-  padding: 40px 55px;
+  padding: 0px 55px;
+  padding-top:40px ;
 }
 
 .headline {
@@ -36,20 +37,13 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  overflow-x: auto; 
-    -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 80vh;
 }
 
 .cards::-webkit-scrollbar {
-  display: none; 
-}
-
-.features-tagline {
-  font-size: 1.2rem;
-  color: #153F6D;
-  font-weight: bold;
-  margin-bottom: 10px;
+  display: none;
 }
 
 .features-cards {
@@ -77,11 +71,11 @@
   border-radius: 20px;
   padding: 20px;
   color: white;
-  width: 430px;
+  max-width: 350px; /* Adjusted max-width */
   height: 400px;
   position: relative;
   box-sizing: border-box;
-  flex-shrink: 0; /* Prevent shrinking of cards */
+  flex-shrink: 0;
 }
 
 .features-card::before {
@@ -104,8 +98,9 @@
   align-items: flex-start;
   padding: 28px;
   gap: 32px;
-  width: 339px;
-  height: 340px;
+  width: 100%;
+  max-width: 339px;
+  height: auto;
   z-index: 1;
 }
 
@@ -115,12 +110,15 @@
   align-items: flex-start;
   padding: 0px;
   gap: 14px;
-  width: 283px;
-  height: 202px;
+  width: 100%;
+  max-width: 283px;
+  height: auto;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  word-wrap: break-word; /* Prevent text overflow */
+  overflow-wrap: break-word; /* Prevent text overflow */
 }
 
 .features-card-tag {
@@ -138,8 +136,8 @@
 }
 
 .features-card-title {
-  width: 283px;
-  height: 76px;
+  width: 100%;
+  max-width: 283px;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -149,11 +147,13 @@
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  word-wrap: break-word; /* Prevent text overflow */
+  overflow-wrap: break-word; /* Prevent text overflow */
 }
 
 .features-card-description {
-  width: 300px;
-  height: 112px;
+  width: 100%;
+  max-width: 300px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -163,6 +163,8 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  word-wrap: break-word; /* Prevent text overflow */
+  overflow-wrap: break-word; /* Prevent text overflow */
 }
 
 .features-card-icon-container {
@@ -188,7 +190,7 @@
   top: 10px;
   background: #FFFFFF;
   border-radius: 500px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .features-card-icon:hover {
@@ -216,8 +218,8 @@
 
   .cards {
     gap: 20px;
-    overflow-x: auto; 
-    flex-wrap: nowrap
+    overflow-x: auto;
+    flex-wrap: nowrap;
   }
 
   .features-cards {

@@ -19,14 +19,16 @@
     padding: 24px;
     gap: 16px;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     max-width: 1400px;
     background:
         linear-gradient(90deg, rgba(57, 131, 204, 0.4) 0%, rgba(0, 86, 184, 0.4) 100%),
         linear-gradient(90deg, #3983CC 0%, #0056B8 100%),
         linear-gradient(85.01deg, #D8DAE0 11.43%, rgba(216, 218, 224, 0) 24.49%),
         url("/src/assets/product-big/27bba1aebf5194357d96c97ca8adb9f8.jpeg") no-repeat center center;
+        
     background-blend-mode: overlay, hue, normal, normal, normal;
+    background-position: left;
     border-radius: 20px;
     background-size: cover;
 }
@@ -39,9 +41,9 @@
     padding: 5%;
     gap: 60px;
     width: 50%;
-    max-width: 600px;
+    max-width: 500px;
     /* Ensuring it doesn't get too wide on large screens */
-    height: auto;
+    height: 400px;
     background: #FFFFFF;
     border-radius: 16px;
 }

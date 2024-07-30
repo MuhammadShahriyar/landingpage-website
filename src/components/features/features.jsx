@@ -6,33 +6,43 @@ import feature3 from '/src/assets/featurescard/fesature3.jpeg'; // corrected the
 import feature4 from '/src/assets/featurescard/feature4.jpeg';
 import feature5 from '/src/assets/featurescard/feature5.jpeg';
 
+import icon1 from "/src/assets/featurescard/brain.png"
+import icon2 from "/src/assets/featurescard/database.png"
+import icon3 from "/src/assets/featurescard/immersive-vr.png"
+import icon4 from "/src/assets/featurescard/nanotechnology.png"
+import icon5 from "/src/assets/featurescard/nanotechnology.png"
 const cardsData = [
     {
+        icon: icon1,
         image: feature1,
         title: 'Empowering Innovation',
         description: 'Join IOPn\'s Web3 journey. Build, contribute, and shape the future in a user-driven, blockchain-powered ecosystem.'
     },
     {
+        icon: icon2,
         image: feature2,
         title: 'Your Data. Your Rules.',
         description: 'IOPn prioritizes privacy. Secure, user-controlled data management keeps your information yours.'
     },
     {
+        icon: icon3,
         image: feature3,
         title: 'Own Your Digital World',
         description: 'Control your identity and data in IOPn\'s decentralized space. Break free from big tech dominance.'
     },
     {
+        icon: icon4,
         image: feature4,
         title: 'Seamless Integration',
         description: 'Experience the seamless integration of cutting-edge technologies, ensuring a smooth transition to Web3.'
     },
     {
+        icon: icon5,
         image: feature5,
         title: 'Future-Proof Solutions',
         description: 'Stay ahead with future-proof solutions designed to adapt and scale with your evolving needs in the digital age.'
     },
-   
+
 ];
 
 const Features = () => {
@@ -54,13 +64,13 @@ const Features = () => {
                 </p>
             </div>
             <div className="cards">
-            {cardsData.map((card, index) => (
+                {cardsData.map((card, index) => (
                     <div key={index} className="features-card" style={{ backgroundImage: `url(${card.image})` }}>
                         <div className="features-card-content">
                             <div className="features-card-content-text">
-
-                            <h2 className="features-card-title">{card.title}</h2>
-                            <p className="features-card-description">{card.description}</p>
+                                <img src={card.icon} alt="" />
+                                <h2 className="features-card-title">{card.title}</h2>
+                                <p className="features-card-description">{card.description}</p>
                             </div>
                         </div>
                         <div className="features-card-icon-container">

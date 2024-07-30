@@ -31,13 +31,28 @@ const Team = () => {
       </div>
       <div className="team-members">
         {teamMembers.map((member, index) => (
-          <div className="team-member-card" key={index} style={{ backgroundImage: `url(${member.image})` }}>
-            <div className="team-content">
-              <h2 className="card-name">{member.name}</h2>
-              <p className="card-title">{member.title}</p>
+          <>
+
+            <div className="team-member-card" key={index} style={{ backgroundImage: `url(${member.image})` }}>
+              <div className="team-content">
+                <h2 className="card-name">{member.name}</h2>
+                <p className="card-title">{member.title}</p>
+              </div>
+            </div>
+
+          </>
+        ))}
+        <div className="cta-team">
+          <div className="team-content-cta">
+            <div>
+            <h2>Passionate builders and visionaries shaping the future of Web3</h2>
+            <p>Learn more about our team and get to know us better</p>
+            </div>
+            <div className="cta-arrow-2">
+              <span>→</span>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
